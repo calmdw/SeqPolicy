@@ -11,6 +11,11 @@
   </video>
 </div>
 
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+  <img src="https://github.com/calmdw/SeqPolicy/blob/main/Pick.gif" width="45%">
+  <img src="https://your-repo.github.io/assets/align_insert.gif" width="45%">
+</div>
+
 
 ---
 
