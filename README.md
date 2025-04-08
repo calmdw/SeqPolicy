@@ -13,24 +13,9 @@
 
 ---
 
-## 📄 Abstract
+## Abstract
+Robotic assembly is widely utilized in large-scale manufacturing due to its high production efficiency, and the peg-in-hole assembly is a typical operation. While single peg-in-hole tasks have achieved great performance through reinforcement learning (RL) methods, multiple peg-in-hole assembly remains challenging due to complex geometry and physical constraints. To address this, we introduce a control policy workflow for multiple peg-in-hole assembly, dividing the task into three primitive sub-tasks: picking, alignment, and insertion to **modularize** the long-term task and improve sample efficiency. Sequential control policy (SeqPolicy), containing three control policies, is used to implement all the sub-tasks step-by-step. This approach introduces human knowledge to **manage intermediate states**, such as lifting height and aligning direction, thereby enabling **flexible deployment across various scenarios**. SeqPolicy demonstrated higher training efficiency with **faster convergence and a higher success rate** compared to the single control policy. Its adaptability is confirmed through generalization experiments involving objects with **varying geometrie**s. Recognizing the importance of object pose for control policies, a low-cost and adaptable method using visual representation containing objects’ pose information from RGB images is proposed to estimate objects’ pose in robot base frame directly in working scenarios. The representation is extracted by a Siamese-CNN network trained with self-supervised contrastive learning. Utilizing it, the alignment sub-task is successfully executed. These experiments validate the solution’s **reusability** and **adaptability** in multiple peg-in-hole scenarios.
 
-Robotic assembly, especially **peg-in-hole**, is key in modern manufacturing due to its high precision demands. While RL excels at **single peg-in-hole tasks**, the complexity of **multiple peg-in-hole assembly** poses new challenges.
-
-To address this, we introduce **SeqPolicy**, a modular control strategy that decomposes the task into three primitives:
-- **Pick**
-- **Align**
-- **Insert**
-
-Each sub-task is handled by an individual control policy, allowing improved sample efficiency, modularity, and robustness. The alignment sub-task benefits from a **self-supervised Siamese-CNN** for visual pose estimation using RGB images.
-
-✨ Highlights:
-- 3-stage modular control policy
-- Efficient and transferable training
-- Generalizes to **unseen geometries**
-- Visual representation learning via contrastive training
-
----
 
 ## 🧩 Modular Policy Pipeline
 
@@ -106,8 +91,7 @@ Each sub-task is handled by an individual control policy, allowing improved samp
 
 [align_insert.webm](https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36)
 
-## Abstract
-Robotic assembly is widely utilized in large-scale manufacturing due to its high production efficiency, and the peg-in-hole assembly is a typical operation. While single peg-in-hole tasks have achieved great performance through reinforcement learning (RL) methods, multiple peg-in-hole assembly remains challenging due to complex geometry and physical constraints. To address this, we introduce a control policy workflow for multiple peg-in-hole assembly, dividing the task into three primitive sub-tasks: picking, alignment, and insertion to modularize the long-term task and improve sample efficiency. Sequential control policy (SeqPolicy), containing three control policies, is used to implement all the sub-tasks step-by-step. This approach introduces human knowledge to manage intermediate states, such as lifting height and aligning direction, thereby enabling flexible deployment across various scenarios. SeqPolicy demonstrated higher training efficiency with faster convergence and a higher success rate compared to the single control policy. Its adaptability is confirmed through generalization experiments involving objects with varying geometries. Recognizing the importance of object pose for control policies, a low-cost and adaptable method using visual representation containing objects’ pose information from RGB images is proposed to estimate objects’ pose in robot base frame directly in working scenarios. The representation is extracted by a Siamese-CNN network trained with self-supervised contrastive learning. Utilizing it, the alignment sub-task is successfully executed. These experiments validate the solution’s reusability and adaptability in multiple peg-in-hole scenarios.
+
 
 ## Pipeline
 
