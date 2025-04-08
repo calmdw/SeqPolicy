@@ -1,4 +1,4 @@
-# 🧠 SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
+# SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
 
 <div style="display: flex; justify-content: center; gap: 20px;">
   <video width="45%" controls>
