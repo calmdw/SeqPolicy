@@ -27,6 +27,9 @@ The SeqPolicy framework consists of:
 3. **Sequential policy execution** on robot agents in both simulation and real environments.
 
 ## Citation
+
+<pre> ```bibtex @article{SeqPolicy2025, title={Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly Using Self-Supervised Contrastive Learning}, author={Your Name and Aljaž Kramberger and Leon Bodenhagen}, journal={Robotics and Computer-Integrated Manufacturing}, year={2025}, publisher={Elsevier} } ``` </pre>
+
 @article{Liu2024, 
 author = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
 title = {Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly},
