@@ -24,10 +24,7 @@ Robotic assembly is widely utilized in large-scale manufacturing due to its high
 
 ## Overview Pipeline
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/df53e719-d8f2-4f4d-bc34-9c3156f9db44" width="80%" alt="Pipeline">
-</p>
-
+![pipeline](https://github.com/user-attachments/assets/df53e719-d8f2-4f4d-bc34-9c3156f9db44)
 ---
 
 ## ⚙️ Simulation Environment Variables
