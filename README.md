@@ -1,3 +1,100 @@
+# 🧠 SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4" width="45%" alt="Pick demo" />
+  &nbsp;
+  <img src="https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36" width="45%" alt="Align and Insert demo" />
+</p>
+
+---
+
+## 📄 Abstract
+
+Robotic assembly, especially **peg-in-hole**, is key in modern manufacturing due to its high precision demands. While RL excels at **single peg-in-hole tasks**, the complexity of **multiple peg-in-hole assembly** poses new challenges.
+
+To address this, we introduce **SeqPolicy**, a modular control strategy that decomposes the task into three primitives:
+- **Pick**
+- **Align**
+- **Insert**
+
+Each sub-task is handled by an individual control policy, allowing improved sample efficiency, modularity, and robustness. The alignment sub-task benefits from a **self-supervised Siamese-CNN** for visual pose estimation using RGB images.
+
+✨ Highlights:
+- 3-stage modular control policy
+- Efficient and transferable training
+- Generalizes to **unseen geometries**
+- Visual representation learning via contrastive training
+
+---
+
+## 🧩 Modular Policy Pipeline
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df53e719-d8f2-4f4d-bc34-9c3156f9db44" width="80%" alt="Pipeline">
+</p>
+
+---
+
+## ⚙️ Simulation Environment Variables
+
+| Variable               | Range             |
+|------------------------|------------------|
+| Grasp state            | Uncertain         |
+| Object position offset | ±0.18 m           |
+| Object rotation offset | ±0.22 rad         |
+| Gravity variation      | ±0.02 m/s²        |
+| Object mass            | 0.2 – 0.3 kg      |
+| Joint stiffness        | ±0.1              |
+| Joint damping          | ±0.1              |
+
+---
+
+## 📈 Policy Training Performance
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/879ef321-a9a4-4303-8509-22558f61101e" width="80%" alt="Policy Learning Curve">
+</p>
+
+---
+
+## 🔬 Ablation Study: Impact of Observations
+
+| Observations Used                                           | Success Rate |
+|-------------------------------------------------------------|--------------|
+| Peg pose, EEF pose, hole pose, hand force                   | 0.912        |
+| Peg pose, hole position                                     | 0.898        |
+| Joint angle, hole position, hand force                      | 0.882        |
+| EEF pose, hole position                                     | 0.497        |
+| Joint angle, hole position                                  | 0.514        |
+| Joint angle, hand force                                     | 0.012        |
+
+---
+
+## 🧪 Generalization to Unseen Geometries
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d128fd65-153d-4593-ac69-0566b851627b" width="80%" alt="Generalization Test">
+</p>
+
+| Geometry   | Success Rate |
+|------------|--------------|
+| Square     | 0.868        |
+| Triangle   | 0.787        |
+| Ellipse    | 0.901        |
+
+---
+
+## 📚 Citation
+
+```bibtex
+@article{Liu2024, 
+  author  = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
+
+
+
+
+
+
 # SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
 
 [Pick.webm](https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4)
