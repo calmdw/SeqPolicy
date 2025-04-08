@@ -1,4 +1,18 @@
-# SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
+# GenPiH: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
+
+### Authors  
+- **Xinyu Liu**  
+  *Department of Electrical and Photonics Engineering, Technical University of Denmark, Kongens Lyngby, Denmark*
+
+- **Chao Zeng**, **Chenguang Yang**  
+  *Department of Computer Science, University of Liverpool, Liverpool, UK*
+
+- **Jianwei Zhang**  
+  *TAMS group, Department of Informatics, University of Hamburg, Hamburg, Germany*
+
+### 📄 Paper  
+[![Read the Paper](https://img.shields.io/badge/Read%20Paper-CAAI%20Artificial%20Intelligence%20Research-blue?style=for-the-badge&logo=readthedocs)](https://www.sciopen.com/article/10.26599/AIR.2024.9150043)
+
 
 <div style="display: flex; justify-content: center; gap: 20px;">
   <video width="45%" controls>
