@@ -28,7 +28,9 @@ The SeqPolicy framework consists of:
 
 ## Citation
 
-<pre> bibtex
+<pre> 
+bibtex
+
 @article{Liu2024, 
 author = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
 title = {Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly},
