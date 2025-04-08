@@ -26,11 +26,9 @@ The SeqPolicy framework consists of:
 2. **Stage-specific RL policy training** using PPO for each hole insertion step.
 3. **Sequential policy execution** on robot agents in both simulation and real environments.
 
-## Citation
+## BibTeX
 
 <pre> 
-bibtex
-
 @article{Liu2024, 
 author = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
 title = {Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly},
