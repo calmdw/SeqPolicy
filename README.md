@@ -1,6 +1,5 @@
 # GenPiH: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
 
-### 📄 Paper  
 [![Read the Paper](https://img.shields.io/badge/Read%20Paper-CAAI%20Artificial%20Intelligence%20Research-blue?style=for-the-badge&logo=readthedocs)](https://www.sciopen.com/article/10.26599/AIR.2024.9150043)
 
 
