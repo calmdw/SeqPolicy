@@ -64,10 +64,11 @@ Robotic assembly is widely utilized in large-scale manufacturing due to its high
 ---
 
 ## 🧪 Generalization to Unseen Geometries
-
+<!--
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d128fd65-153d-4593-ac69-0566b851627b" width="80%" alt="Generalization Test">
 </p>
+-->
 
 | Geometry   | Success Rate |
 |------------|--------------|
