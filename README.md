@@ -37,7 +37,27 @@ The policy learning is efficient with quick and reproducable convergence.
 
 ![policy_learning](https://github.com/user-attachments/assets/879ef321-a9a4-4303-8509-22558f61101e)
 
-## Gernalization on unseen geometry
+## Ablation experiment on different observations
+\begin{tabhere}
+    \centering
+    \caption{\centering Ablation Experiment Result}
+    \setlength{\tabcolsep}{3.3mm}%{6.6mm}{% Change this value to adjust the width of the table.
+    \begin{tabular}{cc}
+        \toprule% Tables with three horizontal lines are recommended.
+        Observation & Sucess Rate \\ %& Direction\\
+        \midrule
+        peg pose, eef pose, hole pose, hand force & 0.912 \\
+        peg pose, hole position & 0.898 \\
+        joint angle, hole position, hand force & 0.882 \\
+        eef pose, hole position & 0.497 \\
+        joint angle, hole position & 0.514 \\
+        joint angle, hand force & 0.012 \\
+        \bottomrule
+    \end{tabular}%
+    \label{tab: ablation experiment}%
+    \end{tabhere}
+
+## Gernalization test on unseen geometry
 ![generalization_test](https://github.com/user-attachments/assets/d128fd65-153d-4593-ac69-0566b851627b)
 
 \begin{tabhere}
