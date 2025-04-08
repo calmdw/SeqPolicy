@@ -16,14 +16,13 @@
   <img src="https://github.com/calmdw/SeqPolicy/blob/main/align_insert.gif" width="45%">
 </div>
 
-
 ---
 
 ## Abstract
 Robotic assembly is widely utilized in large-scale manufacturing due to its high production efficiency, and the peg-in-hole assembly is a typical operation. While single peg-in-hole tasks have achieved great performance through reinforcement learning (RL) methods, multiple peg-in-hole assembly remains challenging due to complex geometry and physical constraints. To address this, we introduce a control policy workflow for multiple peg-in-hole assembly, dividing the task into three primitive sub-tasks: picking, alignment, and insertion to **modularize** the long-term task and improve sample efficiency. Sequential control policy (SeqPolicy), containing three control policies, is used to implement all the sub-tasks step-by-step. This approach introduces human knowledge to **manage intermediate states**, such as lifting height and aligning direction, thereby enabling **flexible deployment across various scenarios**. SeqPolicy demonstrated higher training efficiency with **faster convergence and a higher success rate** compared to the single control policy. Its adaptability is confirmed through generalization experiments involving objects with **varying geometrie**s. Recognizing the importance of object pose for control policies, a low-cost and adaptable method using visual representation containing objects’ pose information from RGB images is proposed to estimate objects’ pose in robot base frame directly in working scenarios. The representation is extracted by a Siamese-CNN network trained with self-supervised contrastive learning. Utilizing it, the alignment sub-task is successfully executed. These experiments validate the solution’s **reusability** and **adaptability** in multiple peg-in-hole scenarios.
 
 
-## 🧩 Modular Policy Pipeline
+## Overview Pipeline
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/df53e719-d8f2-4f4d-bc34-9c3156f9db44" width="80%" alt="Pipeline">
@@ -87,15 +86,6 @@ Robotic assembly is widely utilized in large-scale manufacturing due to its high
   author  = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
 
 
-
-
-
-
-# SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
-
-[Pick.webm](https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4)
-
-[align_insert.webm](https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36)
 
 
 
