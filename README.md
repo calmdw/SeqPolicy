@@ -1,10 +1,15 @@
 # 🧠 SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4" width="45%" alt="Pick demo" />
-  &nbsp;
-  <img src="https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36" width="45%" alt="Align and Insert demo" />
-</p>
+<div style="display: flex; justify-content: center; gap: 20px;">
+  <video width="45%" controls>
+    <source src="https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+  <video width="45%" controls>
+    <source src="https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ---
 
