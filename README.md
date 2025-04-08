@@ -1,6 +1,6 @@
-# SeqPolicy: Sequential Control Policy for Multiple Peg-in-Hole Assembly
+# SeqPolicy: Reinforcement Learning-Based Sequential Control Policy for Multiple Peg-in-Hole Assembly
 
-https://github.com/user-attachments/assets/089565aa-9086-446f-9a78-f2206c164b93
+[Pick.webm](https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4)
 
 [align_insert.webm](https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36)
 
@@ -11,25 +11,50 @@ Robotic assembly is widely utilized in large-scale manufacturing due to its high
 
 ![pipeline](https://github.com/user-attachments/assets/df53e719-d8f2-4f4d-bc34-9c3156f9db44)
 
-
-**SeqPolicy** is a modular reinforcement learning framework designed for high-precision, multi-hole **peg-in-hole assembly tasks**. The system integrates a sequential control strategy and contrastive self-supervised learning (CSSL) to improve performance and generalization in robotic assembly operations.
-
-This project was developed to address the challenges in real-world industrial automation where multiple-hole insertions are needed in a fixed order, such as wire harness assembly.
+## Training Configuration
+\begin{tabhere}
+\centering
+\caption{\centering Simulation Environment Variables}
+\setlength{\tabcolsep}{6.6mm}%{6.6mm}{% Change this value to adjust the width of the table.
+\begin{tabular}{cc}
+    \toprule% Tables with three horizontal lines are recommended.
+    Variables & Range \\ %& Direction\\
+    \midrule
+    grasp state    & uncertain \\   %  & along peg's side\\
+    object initial position  & $\pm{0.18 m}$ \\
+    object initial rotation  & $\pm{0.22 radian}$\\
+    gravitational acceleration   & $\pm{0.02 m/s^2} $\\
+    mass   &    $0.2-0.3$\\
+joint stiffness  & $\pm{0.1}$  \\
+    joint damping  & $\pm{0.1}$  \\
+    \bottomrule
+\end{tabular}
+\label{tab: Simulation Environment Variables}%
+\end{tabhere}%
 
 ## Policy Learning
 The policy learning is efficient with quick and reproducable convergence.
 
 ![policy_learning](https://github.com/user-attachments/assets/879ef321-a9a4-4303-8509-22558f61101e)
 
-## Architecture
+## Gernalization on unseen shape
+![generalization_test](https://github.com/user-attachments/assets/d128fd65-153d-4593-ac69-0566b851627b)
 
-The SeqPolicy framework consists of:
-1. **Pretraining** of visual encoders using contrastive learning on unlabeled image pairs.
-2. **Stage-specific RL policy training** using PPO for each hole insertion step.
-3. **Sequential policy execution** on robot agents in both simulation and real environments.
+\begin{tabhere}
+        \centering
+        \caption{\centering Success Rate of Generalization Test}
+        \setlength{\tabcolsep}{6.6mm}%{6.6mm}{% Change this value to adjust the width of the table.
+        \begin{tabular}{cc}
+            \toprule% Tables with three horizontal lines are recommended.
+            Geometry & Success Rate \\ %& Direction\\
+            \midrule
+            Square    & 0.868\\   %  & along peg's side\\
+            Triangle  & 0.787\\
+            ellipse   & 0.901\\
+            \bottomrule
+        \end{tabular}%
 
 ## BibTeX
-
 <pre> 
 @article{Liu2024, 
 author = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
