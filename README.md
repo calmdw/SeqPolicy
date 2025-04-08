@@ -2,18 +2,6 @@
 
 [![Read the Paper](https://img.shields.io/badge/Read%20Paper-CAAI%20Artificial%20Intelligence%20Research-blue?style=for-the-badge&logo=readthedocs)](https://www.sciopen.com/article/10.26599/AIR.2024.9150043)
 
-
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <video width="45%" controls>
-    <source src="https://github.com/user-attachments/assets/d982fea1-155d-4a06-9eeb-02cdd2131ed4" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
-  <video width="45%" controls>
-    <source src="https://github.com/user-attachments/assets/f93f0088-5ba8-422f-a071-dc2b1a6f1c36" type="video/webm">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
 <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
   <img src="https://github.com/calmdw/SeqPolicy/blob/main/Pick.gif" width="45%">
   <img src="https://github.com/calmdw/SeqPolicy/blob/main/align_insert.gif" width="45%">
