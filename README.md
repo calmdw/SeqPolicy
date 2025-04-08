@@ -77,84 +77,7 @@ Robotic assembly is widely utilized in large-scale manufacturing due to its high
 
 ---
 
-## 📚 Citation
-
-```bibtex
-@article{Liu2024, 
-  author  = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
-
-
-
-
-
-## Pipeline
-
-![pipeline](https://github.com/user-attachments/assets/df53e719-d8f2-4f4d-bc34-9c3156f9db44)
-
-## Training Configuration
-\begin{tabhere}
-\centering
-\caption{\centering Simulation Environment Variables}
-\setlength{\tabcolsep}{6.6mm}%{6.6mm}{% Change this value to adjust the width of the table.
-\begin{tabular}{cc}
-    \toprule% Tables with three horizontal lines are recommended.
-    Variables & Range \\ %& Direction\\
-    \midrule
-    grasp state    & uncertain \\   %  & along peg's side\\
-    object initial position  & $\pm{0.18 m}$ \\
-    object initial rotation  & $\pm{0.22 radian}$\\
-    gravitational acceleration   & $\pm{0.02 m/s^2} $\\
-    mass   &    $0.2-0.3$\\
-joint stiffness  & $\pm{0.1}$  \\
-    joint damping  & $\pm{0.1}$  \\
-    \bottomrule
-\end{tabular}
-\label{tab: Simulation Environment Variables}%
-\end{tabhere}%
-
-## Policy Learning
-The policy learning is efficient with quick and reproducable convergence.
-
-![policy_learning](https://github.com/user-attachments/assets/879ef321-a9a4-4303-8509-22558f61101e)
-
-## Ablation experiment on different observations
-\begin{tabhere}
-    \centering
-    \caption{\centering Ablation Experiment Result}
-    \setlength{\tabcolsep}{3.3mm}%{6.6mm}{% Change this value to adjust the width of the table.
-    \begin{tabular}{cc}
-        \toprule% Tables with three horizontal lines are recommended.
-        Observation & Sucess Rate \\ %& Direction\\
-        \midrule
-        peg pose, eef pose, hole pose, hand force & 0.912 \\
-        peg pose, hole position & 0.898 \\
-        joint angle, hole position, hand force & 0.882 \\
-        eef pose, hole position & 0.497 \\
-        joint angle, hole position & 0.514 \\
-        joint angle, hand force & 0.012 \\
-        \bottomrule
-    \end{tabular}%
-    \label{tab: ablation experiment}%
-    \end{tabhere}
-
-## Gernalization test on unseen geometry
-![generalization_test](https://github.com/user-attachments/assets/d128fd65-153d-4593-ac69-0566b851627b)
-
-\begin{tabhere}
-        \centering
-        \caption{\centering Success Rate of Generalization Test}
-        \setlength{\tabcolsep}{6.6mm}%{6.6mm}{% Change this value to adjust the width of the table.
-        \begin{tabular}{cc}
-            \toprule% Tables with three horizontal lines are recommended.
-            Geometry & Success Rate \\ %& Direction\\
-            \midrule
-            Square    & 0.868\\   %  & along peg's side\\
-            Triangle  & 0.787\\
-            ellipse   & 0.901\\
-            \bottomrule
-        \end{tabular}%
-
-## BibTeX
+## 📚 BibTeX
 <pre> 
 @article{Liu2024, 
 author = {Xinyu Liu and Chao Zeng and Chenguang Yang and Jianwei Zhang},
@@ -168,7 +91,5 @@ url = {https://www.sciopen.com/article/10.26599/AIR.2024.9150043},
 doi = {10.26599/AIR.2024.9150043},
 }
 </pre>
-
-
 
 
