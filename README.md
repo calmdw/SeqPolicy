@@ -37,7 +37,7 @@ The policy learning is efficient with quick and reproducable convergence.
 
 ![policy_learning](https://github.com/user-attachments/assets/879ef321-a9a4-4303-8509-22558f61101e)
 
-## Gernalization on unseen shape
+## Gernalization on unseen geometry
 ![generalization_test](https://github.com/user-attachments/assets/d128fd65-153d-4593-ac69-0566b851627b)
 
 \begin{tabhere}
