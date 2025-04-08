@@ -16,13 +16,10 @@ Robotic assembly is widely utilized in large-scale manufacturing due to its high
 
 This project was developed to address the challenges in real-world industrial automation where multiple-hole insertions are needed in a fixed order, such as wire harness assembly.
 
-## Key Features
+## Policy Learning
+The policy learning is efficient with quick and reproducable convergence.
 
-- 🧠 **Reinforcement Learning (RL)-based sequential controller**: Trains separate control policies for each insertion stage.
-- 🔀 **Stage-wise policy execution**: Implements multiple sub-policies sequentially for multi-step assembly.
-- 🧲 **Contrastive Self-Supervised Learning (CSSL)**: Improves data efficiency and task generalization using visual representation learning.
-- 🎯 **High-precision performance**: Achieves ≤0.5mm tolerance in physical experiments.
-- 🛠 **Sim-to-Real Transfer**: Demonstrates robustness in both Isaac Sim and real-world settings.
+![policy_learning](https://github.com/user-attachments/assets/879ef321-a9a4-4303-8509-22558f61101e)
 
 ## Architecture
 
